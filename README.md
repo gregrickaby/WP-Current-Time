@@ -108,7 +108,7 @@ The styles are minimal on purpose. There are a few CSS classes available:
 
 `.current-date`
 
-For more control, see: https://github.com/gregrickaby/WP-Current-Time/#custom-html
+> For more control, see: https://github.com/gregrickaby/WP-Current-Time/#custom-html
 
 -----------
 
