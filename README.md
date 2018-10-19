@@ -25,7 +25,7 @@ Display the current time and/or date with a WordPress shortcode `[current-time]`
 
 ## Basic Usage
 
-This plugin creates two shortcodes which can be placed into a Gutenberg, the Classic Editor, or a text widget.
+This plugin creates two shortcodes which can be placed into Gutenberg, the Classic Editor, or a text widget.
 
 > The basic shortcodes use your web server's time. If you need to customize your time zone, see [Advanced usage](https://github.com/gregrickaby/WP-Current-Time#advanced-usage)
 
