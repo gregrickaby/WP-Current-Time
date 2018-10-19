@@ -16,13 +16,13 @@ Display the current time and/or date with a WordPress shortcode `[current-time]`
 [current-time]
 ```
 
-Will display the current time in 12-hour format, based on your web server's time: `01:00:00`
+Will display the current time in 12-hour format, **based on your web server's time:** `01:00:00`
 
 ```html
 [current-date]
 ```
 
-Will display the current date in month/day/year format, based on your web server's time: `10/19/2018`
+Will display the current date in month/day/year format, **based on your web server's time:** `10/19/2018`
 
 ### Advanced Usage
 
