@@ -8,7 +8,11 @@ Author:       Greg Rickaby
 Author URI:   https://gregrickaby.com
 License:      GPL3
 License URI:  https://www.gnu.org/licenses/gpl-3.0.html
-Text Domain:  grd-current-time
+Text Domain:  grd-current-timeRequires at least: 4.0
+Tested up to: 4.9.8
+Stable tag:   1.0.0
+Contributors: gregrickaby
+Tags:         time, date
 */
 
 namespace wpct;
