@@ -49,7 +49,7 @@ function current_time( $atts ) {
 	// Create markup.
 	ob_start();
 	?>
-	<span class="current-time"><?php echo esc_html( $time ); ?></span>
+	<time class="current-time"><?php echo esc_html( $time ); ?></time>
 	<?php
 	return ob_get_clean();
 }
@@ -61,11 +61,23 @@ function current_time( $atts ) {
  */
 function current_date( $atts ) {
 
+	// Set up defaults.
 	$defaults = array(
-		'format'   => '',
+		'format'   => 'm/d/Y',
 		'timezone' => '',
 	);
 
+	// Parse attributes.
 	$args = shortcode_atts( $defaults, $atts );
-	return 'Date';
+
+	// Get the current date.
+	$now  = new \DateTime( $args['timezone'] );
+	$date = $now->format( $args['format'] );
+
+	// Create markup.
+	ob_start();
+	?>
+	<time class="current-date"><?php echo esc_html( $date ); ?></time>
+	<?php
+	return ob_get_clean();
 }
