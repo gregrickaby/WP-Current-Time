@@ -1,6 +1,6 @@
 # WP Current Time
 
-Display the current time and date with a WordPress shortcode.
+Display the current time and/or date with a WordPress shortcode `[current-time]` or `[current-date]`.
 
 ## Installation
 
@@ -30,13 +30,13 @@ Will display the current date in month/day/year format, based on your web server
 [current-time format="H:i:s" timezone="America/Chicago"]
 ```
 
-Will display the current time, in 24-hour format, based on the current time in the central time zone: `13:00:00`
+Will display the current time, in 24-hour format, based on the central time zone: `13:00:00`
 
 ```html
 [current-date format="d/m/Y" timezone="America/Chicago"]
 ```
 
-Will display the current date, based on the current time in the central time zone: `19/10/2018`
+Will display the current date, based on the central time zone: `19/10/2018`
 
 To find your time zone, check out the official PHP documentation: https://secure.php.net/manual/en/timezones.php
 
