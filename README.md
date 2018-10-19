@@ -38,9 +38,11 @@ Will display the current time, in 24-hour format, based on the current time in t
 
 Will display the current date, based on the current time in the central time zone: `19/10/2018`
 
+To find your time zone, check out the official PHP documentation: https://secure.php.net/manual/en/timezones.php
+
 ### Multiple Shortcodes
 
-You could also daisy-chain these shortcodes together, for example:
+You can also daisy chain these shortcodes together, for example:
 
 ```html
 [current-time format="H:" timezone="America/Chicago"]
@@ -48,9 +50,9 @@ You could also daisy-chain these shortcodes together, for example:
 [current-time format="s" timezone="America/Chicago"]
 ```
 
-Would output something like: `14:00:00`
+would output: `14:00:00`
 
-You could even use your own HTML markup and CSS in the text editor:
+You can even use your own HTML markup and CSS in the WordPress text editor:
 
 ```html
 <span class="hour">[current-time format="H:" timezone="America/Chicago"]</span>
@@ -58,7 +60,7 @@ You could even use your own HTML markup and CSS in the text editor:
 <span class="seconds">[current-time format="s" timezone="America/Chicago"]</span>
 ```
 
-Would output something like:
+would output:
 
 ```html
 <span class="hour">14:</span>
