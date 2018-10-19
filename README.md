@@ -10,35 +10,61 @@ Display the current time and date with a WordPress shortcode.
 
 ## Usage
 
-### Basic
+### Basic Usage
 
-`[current-time]`
+```html
+[current-time]
+```
 
-Will display the current time in 12-hour format, based on your web server's time:
+Will display the current time in 12-hour format, based on your web server's time: `01:00:00`
 
-`01:00:00`
+```html
+[current-date]
+```
 
-`[current-date]`
+Will display the current date in month/day/year format, based on your web server's time: `10/19/2018`
 
-Will display the current date in month/day/year format, based on your web server's time:
+### Advanced Usage
 
-`10/19/2018`
+```html
+[current-time format="H:i:s" timezone="America/Chicago"]
+```
 
-### Advanced
+Will display the current time, in 24-hour format, based on the current time in the central time zone: `13:00:00`
 
-`[current-time format="H:i:s" timezone="America/Chicago"]`
+```html
+[current-date format="d/m/Y" timezone="America/Chicago"]
+```
 
-Will display the current time, in 24-hour format, based on the current time in Chicago (Central Time):
+Will display the current date, based on the current time in the central time zone: `19/10/2018`
 
-`13:00:00`
+### Multiple Shortcodes
 
-`[current-date format="d/m/Y" timezone="America/Chicago"]`
+You could also daisy-chain these shortcodes together, for example:
 
-Will display the current date, based on the current time in Chicago (Central Time):
+```html
+[current-time format="H:" timezone="America/Chicago"]
+[current-time format="i:" timezone="America/Chicago"]
+[current-time format="s" timezone="America/Chicago"]
+```
 
-`19/10/2018`
+Would output something like: `14:00:00`
 
-To find your timezone, check out the official PHP documentation: https://secure.php.net/manual/en/timezones.php
+You could even use your own HTML markup and CSS in the text editor:
+
+```html
+<span class="hour">[current-time format="H:" timezone="America/Chicago"]</span>
+<span class="minutes">[current-time format="i:" timezone="America/Chicago"]</span>
+<span class="seconds">[current-time format="s" timezone="America/Chicago"]</span>
+```
+
+Would output something like:
+
+```html
+<span class="hour">14:</span>
+<span class="minutes">00:</span>
+<span class="seconds">00</span>
+```
 
 ## Date/Time Format Characters
 
