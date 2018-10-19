@@ -21,7 +21,7 @@ Display the current time and/or date with a WordPress shortcode `[current-time]`
 
 1. [Download](https://github.com/gregrickaby/WP-Current-Time/archive/master.zip) this plugin
 2. Upload/Add this plugin via the WordPress plugins dashboard
-3. Activate the `WP Current Time`
+3. Activate the `WP Current Time` plugin
 
 ## Basic Usage
 
