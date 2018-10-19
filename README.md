@@ -38,7 +38,7 @@ Will display the current time, in 24-hour format, based on the central time zone
 
 Will display the current date, based on the eastern time zone: `19/10/2018`
 
->To find your time zone, see the official PHP documentation: https://secure.php.net/manual/en/timezones.php
+> To find your time zone, see the official PHP documentation: https://secure.php.net/manual/en/timezones.php
 
 ### Multiple Shortcodes
 
