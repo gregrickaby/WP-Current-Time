@@ -98,7 +98,7 @@ For example:
 | s         | **Seconds**, with leading zeros                                        | 00 through 59            |
 | U         | **Seconds** since the Unix Epoch (January 1 1970 00:00:00 GMT)         | 1539961739               |
 
-The full list of characters is available here: https://secure.php.net/manual/en/function.date.php
+The full list of characters are available here: https://secure.php.net/manual/en/function.date.php
 
 ## Style Notes
 
