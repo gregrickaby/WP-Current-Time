@@ -69,17 +69,17 @@ would output: `14:00:00` based on the central time zone.
 You can even write your own HTML and CSS in the WordPress text editor:
 
 ```html
-<span class="hour">[current-time format="H:" timezone="America/Chicago"]</span>
-<span class="minutes">[current-time format="i:" timezone="America/Chicago"]</span>
-<span class="seconds">[current-time format="s" timezone="America/Chicago"]</span>
+<time class="hour">[current-time format="H:" timezone="America/Chicago"]</time>
+<time class="minutes">[current-time format="i:" timezone="America/Chicago"]</time>
+<time class="seconds">[current-time format="s" timezone="America/Chicago"]</time>
 ```
 
 would output:
 
 ```html
-<span class="hour">14:</span>
-<span class="minutes">00:</span>
-<span class="seconds">00</span>
+<time class="hour">14:</time>
+<time class="minutes">00:</time>
+<time class="seconds">00</time>
 ```
 
 ## Date/Time Format Characters
