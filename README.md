@@ -50,7 +50,7 @@ You can also daisy chain these shortcodes together, for example:
 [current-time format="s" timezone="America/Chicago"]
 ```
 
-would output: `14:00:00`
+would output: `14:00:00` based on the central time zone.
 
 ### Custom HTML
 
