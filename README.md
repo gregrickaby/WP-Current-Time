@@ -33,12 +33,12 @@ Will display the current date in month/day/year format, **based on your web serv
 Will display the current time, in 24-hour format, based on the central time zone: `13:00:00`
 
 ```html
-[current-date format="d/m/Y" timezone="America/Chicago"]
+[current-date format="d/m/Y" timezone="America/New_York"]
 ```
 
-Will display the current date, based on the central time zone: `19/10/2018`
+Will display the current date, based on the eastern time zone: `19/10/2018`
 
-To find your time zone, check out the official PHP documentation: https://secure.php.net/manual/en/timezones.php
+**To find your time zone, check out the official PHP documentation: https://secure.php.net/manual/en/timezones.php**
 
 ### Multiple Shortcodes
 
