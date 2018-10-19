@@ -13,7 +13,7 @@ Display the current time and/or date with a WordPress shortcode `[current-time]`
     - [Date/Time Format Characters](#datetime-format-characters)
         - [Common Format Characters](#common-format-characters)
     - [Style Notes](#style-notes)
-    - [Usage examples:](#usage-examples)
+    - [Usage examples](#usage-examples)
 
 ## Installation
 
@@ -151,7 +151,7 @@ The styles are minimal on purpose. There are a few CSS classes available:
 
 > For more control, see: [Custom HTML](https://github.com/gregrickaby/WP-Current-Time/#custom-html)
 
-## Usage examples:
+## Usage examples
 
 <img src="https://dl.dropbox.com/s/77p76wi7kaq4cxy/Screenshot%202018-10-19%2013.01.15.png?dl=0" width="450" alt="Gutenberg example"><br>
 <img src="https://dl.dropbox.com/s/emw4m9ljugrvb99/Screenshot%202018-10-19%2013.02.38.png?dl=0" width="450" alt="Classic editor example"><br>
