@@ -24,10 +24,6 @@ Display the current time and/or date with a WordPress shortcode `[current-time]`
 
 This plugin creates two shortcodes which can be placed into a Gutenberg, the Classic Editor, or a text widget.
 
-![gutenberg](https://dl.dropbox.com/s/hltirz212l0lvmz/Screenshot%202018-10-19%2012.57.32.png?dl=0)
-
-![widget](https://dl.dropbox.com/s/dxo850o09gbwrss/Screenshot%202018-10-19%2012.56.35.png?dl=0)
-
 ### Basic Usage
 
 ```html
@@ -39,6 +35,11 @@ Will display the current time in 12-hour format, **based on your web server's ti
 ```html
 [current-date]
 ```
+
+Screenshot examples:<br>
+<img src="https://dl.dropbox.com/s/77p76wi7kaq4cxy/Screenshot%202018-10-19%2013.01.15.png?dl=0" width="300" alt="Gutenberg example"><br>
+<img src="https://dl.dropbox.com/s/emw4m9ljugrvb99/Screenshot%202018-10-19%2013.02.38.png?dl=0" width="300" alt="Classic editor example"><br>
+<img src="https://dl.dropbox.com/s/fcip8qex15adsxa/Screenshot%202018-10-19%2013.01.49.png?dl=0" width="300" alt="Widget example">
 
 Will display the current date in month/day/year format, **based on your web server's time:** `10/19/2018`
 
