@@ -5,47 +5,43 @@ Display the current time and/or date with a WordPress shortcode `[current-time]`
 **Table of Contents**
 - [WP Current Time](#wp-current-time)
     - [Installation](#installation)
-    - [Usage](#usage)
-        - [Basic Usage](#basic-usage)
-        - [Advanced Usage](#advanced-usage)
+    - [Basic Usage](#basic-usage)
+    - [Advanced Usage](#advanced-usage)
         - [Multiple Shortcodes](#multiple-shortcodes)
         - [Custom HTML](#custom-html)
+        - [Template Tag](#template-tag)
     - [Date/Time Format Characters](#datetime-format-characters)
         - [Common Format Characters](#common-format-characters)
     - [Style Notes](#style-notes)
+    - [Usage examples:](#usage-examples)
 
 ## Installation
+
+>Note: This plugin requires PHP 5.3+
 
 1. [Download](https://github.com/gregrickaby/WP-Current-Time/archive/master.zip) this plugin
 2. Upload/Add this plugin via the WordPress plugins dashboard
 3. Activate the `WP Current Time`
 
-## Usage
+## Basic Usage
 
 This plugin creates two shortcodes which can be placed into a Gutenberg, the Classic Editor, or a text widget.
 
-### Basic Usage
+> The basic shortcodes use your web server's time. If you need to customize your time zone, see [Advanced usage](https://github.com/gregrickaby/WP-Current-Time#advanced-usage)
 
 ```html
 [current-time]
 ```
 
-Will display the current time in 12-hour format, **based on your web server's time:** `01:00:00`
+Will display the current time in 12-hour format: `01:00:00`
 
 ```html
 [current-date]
 ```
 
-Will display the current date in month/day/year format, **based on your web server's time:** `10/19/2018`
+Will display the current date in month/day/year format: `10/19/2018`
 
-**Usage examples:**<br>
-<img src="https://dl.dropbox.com/s/77p76wi7kaq4cxy/Screenshot%202018-10-19%2013.01.15.png?dl=0" width="450" alt="Gutenberg example"><br>
-<img src="https://dl.dropbox.com/s/emw4m9ljugrvb99/Screenshot%202018-10-19%2013.02.38.png?dl=0" width="450" alt="Classic editor example"><br>
-<img src="https://dl.dropbox.com/s/fcip8qex15adsxa/Screenshot%202018-10-19%2013.01.49.png?dl=0" width="450" alt="Widget example">
-
-
-
-### Advanced Usage
+## Advanced Usage
 
 ```html
 [current-time format="H:i:s" timezone="America/Chicago"]
@@ -91,11 +87,35 @@ would output:
 <time class="seconds">00</time>
 ```
 
+### Template Tag
+
+You could even use the following template tags inside your theme:
+
+```php
+    if ( function_exists( 'wpct\current_time' ) ) {
+        echo wpct\current_time( array(
+            'format' => 'H:i:s',
+            'timezone' => 'America/Chicago'
+        ) );
+    }
+```
+
+would output: `13:00:00`
+
+```php
+    if ( function_exists( 'wpct\current_date' ) ) {
+        echo wpct\current_date( array(
+            'format' => 'm/d/Y',
+            'timezone' => 'America/Chicago'
+        ) );
+    }
+```
+
+would output: `10/19/2018`
+
 ## Date/Time Format Characters
 
-PHP has several characters available for changing how the format of date and time is displayed.
-
-For example:
+PHP has several characters available for changing how the format of date and time is displayed. For example:
 
 `m/d/Y` = 10/19/2018
 
@@ -129,7 +149,13 @@ The styles are minimal on purpose. There are a few CSS classes available:
 
 `.current-date`
 
-> For more control, see: https://github.com/gregrickaby/WP-Current-Time/#custom-html
+> For more control, see: [Custom HTML](https://github.com/gregrickaby/WP-Current-Time/#custom-html)
+
+## Usage examples:
+
+<img src="https://dl.dropbox.com/s/77p76wi7kaq4cxy/Screenshot%202018-10-19%2013.01.15.png?dl=0" width="450" alt="Gutenberg example"><br>
+<img src="https://dl.dropbox.com/s/emw4m9ljugrvb99/Screenshot%202018-10-19%2013.02.38.png?dl=0" width="450" alt="Classic editor example"><br>
+<img src="https://dl.dropbox.com/s/fcip8qex15adsxa/Screenshot%202018-10-19%2013.01.49.png?dl=0" width="450" alt="Widget example">
 
 -----------
 
