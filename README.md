@@ -156,8 +156,12 @@ The styles are minimal on purpose. There are a two CSS classes available:
 
 ## Usage examples
 
-<img src="https://dl.dropbox.com/s/77p76wi7kaq4cxy/Screenshot%202018-10-19%2013.01.15.png?dl=0" width="650" alt="Gutenberg example"><br>
-<img src="https://dl.dropbox.com/s/emw4m9ljugrvb99/Screenshot%202018-10-19%2013.02.38.png?dl=0" width="650" alt="Classic editor example"><br>
+<img src="https://dl.dropbox.com/s/77p76wi7kaq4cxy/Screenshot%202018-10-19%2013.01.15.png?dl=0" width="650" alt="Gutenberg example">
+
+-----------
+<img src="https://dl.dropbox.com/s/emw4m9ljugrvb99/Screenshot%202018-10-19%2013.02.38.png?dl=0" width="650" alt="Classic editor example">
+
+-----------
 <img src="https://dl.dropbox.com/s/fcip8qex15adsxa/Screenshot%202018-10-19%2013.01.49.png?dl=0" width="650" alt="Widget example">
 
 -----------
