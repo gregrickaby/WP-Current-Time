@@ -52,7 +52,9 @@ You can also daisy chain these shortcodes together, for example:
 
 would output: `14:00:00`
 
-You can even use your own HTML markup and CSS in the WordPress text editor:
+### Custom HTML
+
+You can even write your own HTML and CSS in the WordPress text editor:
 
 ```html
 <span class="hour">[current-time format="H:" timezone="America/Chicago"]</span>
@@ -105,6 +107,8 @@ The styles are minimal on purpose. There are a few CSS classes available:
 `.current-time`
 
 `.current-date`
+
+For more control, see: https://github.com/gregrickaby/WP-Current-Time/#custom-html
 
 -----------
 
