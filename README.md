@@ -7,7 +7,7 @@ Display the current time and/or date with a WordPress shortcode `[current-time]`
     - [Installation](#installation)
     - [Basic Usage](#basic-usage)
     - [Advanced Usage](#advanced-usage)
-        - [Shortcoes](#shortcoes)
+        - [Shortcodes](#shortcodes)
         - [Multiple Shortcodes](#multiple-shortcodes)
         - [Custom HTML](#custom-html)
         - [Template Tag](#template-tag)
@@ -44,7 +44,7 @@ Will display the current date in month/day/year format: `10/19/2018`
 
 ## Advanced Usage
 
-### Shortcoes
+### Shortcodes
 
 ```html
 [current-time format="H:i:s" timezone="America/Chicago"]
