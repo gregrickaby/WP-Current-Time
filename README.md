@@ -1,6 +1,6 @@
 # WP Current Time
 
-Display the current time and/or date with a WordPress shortcode `[current-time]` or `[current-date]`. Compatible with both Gutenberg, the Classic Editor, and widgets.
+Display the current time and/or date with a WordPress shortcode `[current-time]` or `[current-date]`. Compatible with Gutenberg, the Classic Editor, and Widgets.
 
 **Table of Contents**
 - [WP Current Time](#wp-current-time)
