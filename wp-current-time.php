@@ -48,13 +48,12 @@ function current_time( $atts ) {
 	$args = shortcode_atts( $defaults, $atts );
 
 	// Get the current time.
-	$now  = new \DateTime( $args['timezone'] );
-	$time = $now->format( $args['format'] );
+	$now = new \DateTime( $args['timezone'] );
 
 	// Create markup.
 	ob_start();
 	?>
-	<time class="current-time"><?php echo esc_html( $time ); ?></time>
+	<time class="current-time" datetime="<?php echo esc_attr( $now->format( 'H:i:s' ) ); ?>"><?php echo esc_html( $now->format( $args['format'] ) ); ?></time>
 	<?php
 	return ob_get_clean();
 }
@@ -76,13 +75,12 @@ function current_date( $atts ) {
 	$args = shortcode_atts( $defaults, $atts );
 
 	// Get the current date.
-	$now  = new \DateTime( $args['timezone'] );
-	$date = $now->format( $args['format'] );
+	$now = new \DateTime( $args['timezone'] );
 
 	// Create markup.
 	ob_start();
 	?>
-	<time class="current-date"><?php echo esc_html( $date ); ?></time>
+	<time class="current-date" datetime="<?php echo esc_attr( $now->format( 'c' ) ); ?>"><?php echo esc_html( $now->format( $args['format'] ) ); ?></time>
 	<?php
 	return ob_get_clean();
 }
