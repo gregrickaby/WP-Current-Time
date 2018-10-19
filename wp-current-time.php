@@ -3,7 +3,7 @@
 Plugin Name:       WP Current Time
 Plugin URI:        https://github.com/gregrickaby/WP-Current-Time/
 Description:       Display the current time and/or date with a shortcode <code>[current-time]</code> or <code>[current-date]</code>.
-Version:           20181019
+Version:           1.0.0
 Author:            Greg Rickaby
 Author URI:        https://gregrickaby.com
 License:           GPL3
@@ -11,7 +11,7 @@ License URI:       https://www.gnu.org/licenses/gpl-3.0.html
 Text Domain:       wpct
 Requires at least: 4.0
 Tested up to:      4.9.8
-Stable tag:        20181019
+Stable tag:        1.0.0
 Contributors:      gregrickaby
 Tags:              time, date
 */
