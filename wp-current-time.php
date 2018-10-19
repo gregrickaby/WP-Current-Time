@@ -33,11 +33,25 @@ add_action( 'init', 'wpct\shortcode_init' );
  */
 function current_time( $atts ) {
 
-	$a = shortcode_atts( array(
-		'' => '',
-	), $atts );
+	// Set up defaults.
+	$defaults = array(
+		'format'   => 'h:i:s',
+		'timezone' => '',
+	);
 
-	return 'Time';
+	// Parse attributes.
+	$args = shortcode_atts( $defaults, $atts );
+
+	// Get the current time.
+	$now  = new \DateTime( $args['timezone'] );
+	$time = $now->format( $args['format'] );
+
+	// Create markup.
+	ob_start();
+	?>
+	<time class="current-time"><?php echo esc_html( $time ); ?></time>
+	<?php
+	return ob_get_clean();
 }
 
 /**
@@ -47,9 +61,23 @@ function current_time( $atts ) {
  */
 function current_date( $atts ) {
 
-	$a = shortcode_atts( array(
-		'' => '',
-	), $atts );
+	// Set up defaults.
+	$defaults = array(
+		'format'   => 'm/d/Y',
+		'timezone' => '',
+	);
 
-	return 'Date';
+	// Parse attributes.
+	$args = shortcode_atts( $defaults, $atts );
+
+	// Get the current date.
+	$now  = new \DateTime( $args['timezone'] );
+	$date = $now->format( $args['format'] );
+
+	// Create markup.
+	ob_start();
+	?>
+	<time class="current-date"><?php echo esc_html( $date ); ?></time>
+	<?php
+	return ob_get_clean();
 }
