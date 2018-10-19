@@ -18,17 +18,15 @@ Display the current time and/or date with a WordPress shortcode `[current-time]`
 
 ## Installation
 
->Note: This plugin requires PHP 5.3+
-
 1. [Download](https://github.com/gregrickaby/WP-Current-Time/archive/master.zip) this plugin
 2. Upload/Add this plugin via the WordPress plugins dashboard
 3. Activate the `WP Current Time` plugin
 
+>Note: This plugin requires PHP 5.3+
+
 ## Basic Usage
 
 This plugin creates two shortcodes which can be placed into Gutenberg, the Classic Editor, or a text widget.
-
-> The basic shortcodes use your web server's time. If you need to customize your time zone, see [Advanced Usage](https://github.com/gregrickaby/WP-Current-Time#advanced-usage)
 
 ```html
 [current-time]
@@ -41,6 +39,8 @@ Will display the current time in 12-hour format: `01:00:00`
 ```
 
 Will display the current date in month/day/year format: `10/19/2018`
+
+> The basic shortcodes use your web server's time. If you need to customize your time zone, see [Advanced Usage](https://github.com/gregrickaby/WP-Current-Time#advanced-usage)
 
 ## Advanced Usage
 
