@@ -7,6 +7,7 @@ Display the current time and/or date with a WordPress shortcode `[current-time]`
     - [Installation](#installation)
     - [Basic Usage](#basic-usage)
     - [Advanced Usage](#advanced-usage)
+        - [Shortcoes](#shortcoes)
         - [Multiple Shortcodes](#multiple-shortcodes)
         - [Custom HTML](#custom-html)
         - [Template Tag](#template-tag)
@@ -27,7 +28,7 @@ Display the current time and/or date with a WordPress shortcode `[current-time]`
 
 This plugin creates two shortcodes which can be placed into Gutenberg, the Classic Editor, or a text widget.
 
-> The basic shortcodes use your web server's time. If you need to customize your time zone, see [Advanced usage](https://github.com/gregrickaby/WP-Current-Time#advanced-usage)
+> The basic shortcodes use your web server's time. If you need to customize your time zone, see [Advanced Usage](https://github.com/gregrickaby/WP-Current-Time#advanced-usage)
 
 ```html
 [current-time]
@@ -42,6 +43,8 @@ Will display the current time in 12-hour format: `01:00:00`
 Will display the current date in month/day/year format: `10/19/2018`
 
 ## Advanced Usage
+
+### Shortcoes
 
 ```html
 [current-time format="H:i:s" timezone="America/Chicago"]
@@ -92,23 +95,23 @@ would output:
 You could even use the following template tags inside your theme:
 
 ```php
-    if ( function_exists( 'wpct\current_time' ) ) {
-        echo wpct\current_time( array(
-            'format' => 'H:i:s',
-            'timezone' => 'America/Chicago'
-        ) );
-    }
+if ( function_exists( 'wpct\current_time' ) ) {
+    echo wpct\current_time( array(
+        'format'   => 'H:i:s',
+        'timezone' => 'America/Chicago'
+    ) );
+}
 ```
 
 would output: `13:00:00`
 
 ```php
-    if ( function_exists( 'wpct\current_date' ) ) {
-        echo wpct\current_date( array(
-            'format' => 'm/d/Y',
-            'timezone' => 'America/Chicago'
-        ) );
-    }
+if ( function_exists( 'wpct\current_date' ) ) {
+    echo wpct\current_date( array(
+        'format'   => 'm/d/Y',
+        'timezone' => 'America/Chicago'
+    ) );
+}
 ```
 
 would output: `10/19/2018`
