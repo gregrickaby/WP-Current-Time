@@ -16,9 +16,15 @@ Display the current time and/or date with a WordPress shortcode `[current-time]`
 
 == Installation ==
 
-1. [Download](https://github.com/gregrickaby/WP-Current-Time/archive/master.zip) this plugin
-2. Upload/Add this plugin via the WordPress plugins dashboard
-3. Activate the `WP Current Time` plugin
+=== From within WordPress ===
+1. Visit 'Plugins > Add New'
+1. Search for 'WP Current Time'
+1. Activate WP Current Time from your Plugins page.
+
+=== Manually ===
+
+1. Upload the `wp-current-time` folder to the `/wp-content/plugins/` directory
+1. Activate the WP Current Time plugin through the 'Plugins' menu in WordPress
 
 == Table of Contents ==
 - [Basic Usage](#basic-usage)
@@ -48,7 +54,7 @@ Will display the current time in 12-hour format: `01:00:00`
 
 Will display the current date in month/day/year format: `10/19/2018`
 
-> The basic shortcodes use your web server's time. If you need to customize your time zone, see [Advanced Usage](https://github.com/gregrickaby/WP-Current-Time#advanced-usage)
+> The basic shortcodes use your web server's time. If you need to customize your time zone, see [Advanced Usage](#advanced-usage)
 
 ## Advanced Usage
 
@@ -160,17 +166,12 @@ The styles are minimal on purpose. There are a two CSS classes available:
 
 `.current-date`
 
-> For more control, see: [Custom HTML](https://github.com/gregrickaby/WP-Current-Time/#custom-html)
+> For more control, see: [Custom HTML](#custom-html)
 
-## Usage examples
-
-<img src="https://dl.dropbox.com/s/77p76wi7kaq4cxy/Screenshot%202018-10-19%2013.01.15.png?dl=0" width="650" alt="Gutenberg example">
-
------------
-<img src="https://dl.dropbox.com/s/emw4m9ljugrvb99/Screenshot%202018-10-19%2013.02.38.png?dl=0" width="650" alt="Classic editor example">
-
------------
-<img src="https://dl.dropbox.com/s/fcip8qex15adsxa/Screenshot%202018-10-19%2013.01.49.png?dl=0" width="650" alt="Widget example">
+== Screenshots ==
+1. Example usage in Gutenberg
+2. Example usage in the Classic Editor
+3. Example usage in a text widget
 
 -----------
 
